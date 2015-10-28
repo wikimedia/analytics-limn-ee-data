@@ -1,0 +1,39 @@
+databases:
+    x1:
+        host: "x1-analytics-slave.eqiad.wmnet"
+        port: 3306
+        creds_file: /a/.my.cnf.research
+        db: enwiki # just a default, queries already specify it
+
+defaults:
+    db: x1
+
+graphs: # must be here, or else generate.py will crash
+
+reportupdater-output: /a/limn-public-data/metrics/echo
+
+reportupdater-reports:
+    monthly_production_and_consumption_of_notifications:
+        frequency: months
+        granularity: months
+        lag: 2678400 # 31 days in seconds
+        timeboxed: true
+        starts: 2013-09-01
+        explode_by:
+            wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+    distribution_of_unread_notifications:
+        frequency: months
+        granularity: months
+        lag: 2678400 # 31 days in seconds
+        timeboxed: true
+        starts: 2013-09-01
+        explode_by:
+            wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+    distribution_of_response_time:
+        frequency: months
+        granularity: months
+        lag: 2678400 # 31 days in seconds
+        timeboxed: true
+        starts: 2013-09-01
+        explode_by:
+            wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
