@@ -21,6 +21,7 @@ FROM
 			notification_bundle_display_hash
 		FROM {wiki_db}.echo_notification
 		WHERE notification_bundle_base = 1
+		GROUP BY notification_bundle_display_hash
 	) bundle ON notification.notification_bundle_display_hash = bundle.notification_bundle_display_hash AND notification.notification_bundle_display_hash != ''
 	WHERE notification.notification_timestamp BETWEEN '{from_timestamp}' AND '{to_timestamp}'
 ) AS temp;
