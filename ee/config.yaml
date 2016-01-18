@@ -4,6 +4,11 @@ databases:
         port: 3306
         creds_file: /a/.my.cnf.research
         db: enwiki # just a default, queries already specify it
+    mediawiki:
+        host: "analytics-store.eqiad.wmnet"
+        port: 3306
+        creds_file: /a/.my.cnf.research
+        db: enwiki # just a default, queries already specify it
 
 defaults:
     db: x1
@@ -37,3 +42,11 @@ reportupdater-reports:
         starts: 2013-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+    crosswiki_betafeature:
+        db: mediawiki
+        frequency: days
+        granularity: days
+        timeboxed: true
+        starts: 2016-01-19
+        explode_by:
+            wiki_db: testwiki, test2wiki, mediawikiwiki
