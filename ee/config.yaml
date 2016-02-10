@@ -42,11 +42,12 @@ reportupdater-reports:
         starts: 2013-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
-    crosswiki_betafeature:
-        db: mediawiki
-        frequency: days
-        granularity: days
-        timeboxed: true
-        starts: 2016-01-19
-        explode_by:
-            wiki_db: testwiki, test2wiki, mediawikiwiki
+    # This has been moved to limn-language-data
+    #crosswiki_betafeature:
+        #db: mediawiki
+        #frequency: days
+        #granularity: days
+        #timeboxed: true
+        #starts: 2016-01-19
+        #explode_by:
+            #wiki_db: testwiki, test2wiki, mediawikiwiki
