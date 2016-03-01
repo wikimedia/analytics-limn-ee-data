@@ -13,11 +13,8 @@ databases:
 defaults:
     db: x1
 
-graphs: # must be here, or else generate.py will crash
+reports:
 
-reportupdater-output: /a/limn-public-data/metrics/echo
-
-reportupdater-reports:
     monthly_production_and_consumption_of_notifications:
         frequency: months
         granularity: months
@@ -26,6 +23,7 @@ reportupdater-reports:
         starts: 2013-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+
     distribution_of_unread_notifications:
         frequency: months
         granularity: months
@@ -34,6 +32,7 @@ reportupdater-reports:
         starts: 2013-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+
     distribution_of_response_time:
         frequency: months
         granularity: months
@@ -42,6 +41,7 @@ reportupdater-reports:
         starts: 2013-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+
     # This has been moved to limn-language-data
     #crosswiki_betafeature:
         #db: mediawiki
