@@ -24,21 +24,12 @@ reports:
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
 
-    distribution_of_unread_notifications:
+    days_to_read:
         frequency: months
         granularity: months
         lag: 2678400 # 31 days in seconds
         timeboxed: true
-        starts: 2013-09-01
-        explode_by:
-            wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
-
-    distribution_of_response_time:
-        frequency: months
-        granularity: months
-        lag: 2678400 # 31 days in seconds
-        timeboxed: true
-        starts: 2013-09-01
+        starts: 2015-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
 
