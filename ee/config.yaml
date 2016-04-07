@@ -16,19 +16,15 @@ defaults:
 reports:
 
     monthly_production_and_consumption_of_notifications:
-        frequency: months
         granularity: months
         lag: 2678400 # 31 days in seconds
-        timeboxed: true
         starts: 2013-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
 
     days_to_read:
-        frequency: months
         granularity: months
         lag: 2678400 # 31 days in seconds
-        timeboxed: true
         starts: 2015-09-01
         explode_by:
             wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
@@ -36,9 +32,7 @@ reports:
     # This has been moved to limn-language-data
     #crosswiki_betafeature:
         #db: mediawiki
-        #frequency: days
         #granularity: days
-        #timeboxed: true
         #starts: 2016-01-19
         #explode_by:
             #wiki_db: testwiki, test2wiki, mediawikiwiki
