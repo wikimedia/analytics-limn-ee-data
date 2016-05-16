@@ -1,0 +1,16 @@
+databases:
+    mediawiki:
+        host: "analytics-store.eqiad.wmnet"
+        port: 3306
+        creds_file: /a/.my.cnf.research
+        db: enwiki # just a default, queries already specify it
+
+defaults:
+    db: mediawiki
+
+reports:
+    crosswiki_beta:
+        granularity: days
+        starts: 2016-02-18
+        explode_by:
+            wiki_db: testwiki, test2wiki, mediawikiwiki, testwikidatawiki, wikidatawiki, commonswiki, hewiki, hewikibooks, hewikinews, hewikiquote, hewikisource, hewikivoyage, hewiktionary, frwiki, frwikibooks, frwikinews, frwikiquote, frwikiversity, frwikivoyage, frwiktionary, metawiki, enwiki, eswiki, dewiki, zhwiki, ruwiki, itwiki, ptwiki, jawiki, plwiki, svwiki, viwiki, arwiki, cawiki, fawiki, idwiki, kowiki, trwiki, ukwiki, hiwiki, enwikibooks, enwiktionary, enwikiquote, enwikisource, enwikinews, enwikiversity, enwikivoyage, specieswiki, incubatorwiki, wikimania2016wiki, strategywiki
