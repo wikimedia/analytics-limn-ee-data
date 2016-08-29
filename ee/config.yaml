@@ -20,11 +20,11 @@ reports:
         lag: 2678400 # 31 days in seconds
         starts: 2013-09-01
         explode_by:
-            wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+            wiki_db: wiki_dbs.txt
 
     days_to_read:
         granularity: months
         lag: 2678400 # 31 days in seconds
         starts: 2015-09-01
         explode_by:
-            wiki_db: enwiki, dewiki, eswiki, frwiki, hewiki, huwiki, itwiki, nlwiki, plwiki, ptwiki, svwiki
+            wiki_db: wiki_dbs.txt

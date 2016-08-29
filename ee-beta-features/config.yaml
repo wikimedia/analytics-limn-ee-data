@@ -13,4 +13,4 @@ reports:
         granularity: days
         starts: 2016-02-18
         explode_by:
-            wiki_db: testwiki, test2wiki, mediawikiwiki, testwikidatawiki, wikidatawiki, commonswiki, hewiki, hewikibooks, hewikinews, hewikiquote, hewikisource, hewikivoyage, hewiktionary, frwiki, frwikibooks, frwikinews, frwikiquote, frwikiversity, frwikivoyage, frwiktionary, metawiki, enwiki, eswiki, dewiki, zhwiki, ruwiki, itwiki, ptwiki, jawiki, plwiki, svwiki, viwiki, arwiki, cawiki, fawiki, idwiki, kowiki, trwiki, ukwiki, hiwiki, enwikibooks, enwiktionary, enwikiquote, enwikisource, enwikinews, enwikiversity, enwikivoyage, specieswiki, incubatorwiki, wikimania2016wiki, strategywiki
+            wiki_db: wiki_dbs.txt
