@@ -1,0 +1,55 @@
+databases:
+    mediawiki:
+        host: "analytics-store.eqiad.wmnet"
+        port: 3306
+        creds_file: /a/.my.cnf.research
+        db: enwiki # just a default
+
+defaults:
+    db: mediawiki
+
+reports:
+
+    # edit-related metrics (content)
+    daily_edits:
+        granularity: days
+        starts: 2016-01-01
+        lag: 3600 #3600s
+        explode_by:
+            wiki_db: wiki_dbs.txt
+
+    daily_edits_by_bot_users:
+        granularity: days
+        starts: 2016-01-01
+        lag: 3600 #3600s
+        explode_by:
+            wiki_db: wiki_dbs.txt
+
+    daily_edits_by_nonbot_reg_users:
+        granularity: days
+        starts: 2016-01-01
+        lag: 3600 #3600s
+        explode_by:
+            wiki_db: wiki_dbs.txt
+
+    daily_edits_by_anon_users:
+        granularity: days
+        starts: 2016-01-01
+        lag: 3600 #3600s
+        explode_by:
+            wiki_db: wiki_dbs.txt
+
+    # 2 editor-related metrics (community)
+    daily_unique_anon_editors:
+        granularity: days
+        starts: 2016-01-01
+        lag: 3600 #3600s
+        explode_by:
+            wiki_db: wiki_dbs.txt
+
+    daily_unique_nonbot_reg_editors:
+        granularity: days
+        starts: 2016-01-01
+        lag: 3600 #3600s
+        explode_by:
+            wiki_db: wiki_dbs.txt
