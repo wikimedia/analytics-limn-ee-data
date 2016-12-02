@@ -1,7 +1,7 @@
 -- daily unique anonymous editors
 SELECT
     DATE('{from_timestamp}') AS date,
-    COUNT(*) as unique_anon_editors
+    COUNT(*) as {wiki_db}
 FROM (
     SELECT
         rev_user_text,

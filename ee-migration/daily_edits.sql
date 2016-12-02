@@ -1,7 +1,7 @@
 -- daily edits
 SELECT
     DATE('{from_timestamp}') AS date,
-    SUM(revisions) AS edits
+    SUM(revisions) AS {wiki_db}
 FROM (
     SELECT
         COUNT(*) AS revisions

@@ -1,7 +1,7 @@
 -- daily edits by bot users
 SELECT
     DATE('{from_timestamp}') AS date,
-    SUM(revisions) AS edits_by_bot_users
+    SUM(revisions) AS {wiki_db}
 FROM (
     SELECT
         COUNT(*) AS revisions

@@ -1,7 +1,7 @@
 -- daily unique registered non-bot editors
 SELECT
     DATE('{from_timestamp}') AS date,
-    COUNT(*) unique_nonbot_reg_editors
+    COUNT(*) {wiki_db}
 FROM (
     SELECT
         rev_user,
