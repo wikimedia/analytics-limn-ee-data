@@ -1,0 +1,9 @@
+plwiki
+ptwiki
+fawiki
+nlwiki
+ruwiki
+trwiki
+wikidatawiki
+cswiki
+enwiki
