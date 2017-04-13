@@ -1,9 +1,13 @@
 plwiki
 ptwiki
+frwiki
 fawiki
-nlwiki
 ruwiki
 trwiki
+nlwiki
 wikidatawiki
 cswiki
+hewiki
+etwiki
 enwiki
+dewiki
