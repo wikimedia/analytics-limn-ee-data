@@ -1,9 +1,4 @@
 databases:
-    x1:
-        host: "x1-analytics-slave.eqiad.wmnet"
-        port: 3306
-        creds_file: /etc/mysql/conf.d/stats-research-client.cnf
-        db: enwiki # just a default, queries already specify it
     mediawiki:
         host: "analytics-store.eqiad.wmnet"
         port: 3306
@@ -11,7 +6,7 @@ databases:
         db: enwiki # just a default, queries already specify it
 
 defaults:
-    db: x1
+    db: mediawiki
 
 reports:
 
